@@ -2,63 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cyberpunk Theme</title>
+  <title>Always do RUSH</title>
   <style>
+    /* Global Styles */
     :root {
       --primary-color: #ff00cc;
       --secondary-color: #00ffcc;
       --text-color: #fff;
       --border-radius: 5px;
     }
-
-    /* 1. Body Background */
     body {
       background: radial-gradient(circle, #000, #222);
       color: var(--text-color);
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* 2. Header Gradient */
+    /* Header */
     header {
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       padding: 1rem;
       display: flex;
       justify-content: space-between;
+      flex-shrink: 0; /* 1 */
     }
-
-    /* 3. Navigation Styles */
     nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
     }
-
     nav ul li {
       margin-right: 1rem;
+      cursor: pointer; /* 2 */
     }
-
-    /* 4. Hover Effect */
     nav ul li:hover {
-      text-shadow: 0 0 5px var(--secondary-color);
+      text-shadow: 0 0 5px var(--secondary-color); /* 3 */
     }
-
-    /* 5. Title Style */
     h1 {
       margin: 0;
       font-size: 2.5rem;
-      text-shadow: 0 0 5px var(--primary-color);
+      text-shadow: 0 0 5px var(--primary-color); /* 4 */
     }
 
-    /* 6. Main Content */
+    /* Main Content */
     main {
+      flex-grow: 1; /* 5 */
       padding: 1rem;
+      overflow-y: auto; /* 6 */
       background-color: rgba(0, 0, 0, 0.8);
     }
-
-    /* 7. Card Style */
     .card {
       border: 1px solid var(--secondary-color);
       border-radius: var(--border-radius);
@@ -66,15 +63,22 @@
       margin: 1rem 0;
       background-color: rgba(0, 0, 0, 0.9);
     }
+    .red-text {
+      background: red; /* 7 */
+    }
+    .respect-link span {
+      background: black; /* 8 */
+    }
 
-    /* 8. Footer */
+    /* Footer */
     footer {
       background-color: var(--primary-color);
       padding: 1rem;
       text-align: center;
+      flex-shrink: 0; /* 9 */
     }
 
-    /* 9. Button */
+    /* Extra */
     .btn {
       background-color: var(--primary-color);
       color: var(--text-color);
@@ -83,10 +87,8 @@
       border-radius: var(--border-radius);
       cursor: pointer;
     }
-
-    /* 10. Button Hover */
     .btn:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--secondary-color); /* 10 */
     }
   </style>
 </head>
@@ -104,13 +106,20 @@
   <main>
     <div class="card">
       <h2>Welcome</h2>
-      <p>Welcome to the Cyberpunk world. Let's explore the future.</p>
+      <p>Descend into the shadowy depths of the Cyberpunk world. Your future awaits in the darkness. Either as a corp rat or a street kid.</p>
     </div>
     <div class="card">
       <h2>Technology</h2>
       <p>Immerse yourself in the world of futuristic technology.</p>
       <button class="btn">Learn More</button>
     </div>
+    <span class="red-text">Gone but not forgotten</span> <!-- Your Red Text -->
+    <div>
+      <img src="https://th.bing.com/th/id/R.eb456fed44f5a68c8bcdddf4c3fab30b?rik=rzoayMO7UHVHVg&riu=http%3a%2f%2fblog.greenwicher.com%2f2017%2f01%2f03%2fcodeforces-problemset%2ftourist.jpg&ehk=IujEKAtAN6dgDVrkplI%2f9P8iJkjR7oJI9NTQJ1Jdw0Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" width="200"> <!-- Your Image -->
+    </div>
+    <a class="respect-link" target="_blank" href="https://piratesforums.co/attachments/press-f-to-pay-respects-jpg.104024/">
+      <span>Click here to pay respect</span> <!-- Your Link -->
+    </a>
   </main>
   <footer>
     <p>Cyberpunk Theme &copy; 2023</p>
