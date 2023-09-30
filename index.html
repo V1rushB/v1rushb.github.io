@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Always do RUSH</title>
+  <title> Always do RUSH </title>
   <style>
     /* Global Styles */
     :root {
@@ -11,6 +11,21 @@
       --text-color: #fff;
       --border-radius: 5px;
     }
+    
+    body::before {
+      content: "";
+      background-image: url('https://images.nightcafe.studio/jobs/1twa3bw13tYDXCXT51qJ/1twa3bw13tYDXCXT51qJ.jpg?tr=w-1600,c-at_max');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    
     body {
       background: radial-gradient(circle, #000, #222);
       color: var(--text-color);
@@ -21,14 +36,13 @@
       display: flex;
       flex-direction: column;
     }
-
+    
     /* Header */
     header {
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       padding: 1rem;
       display: flex;
       justify-content: space-between;
-      flex-shrink: 0; /* 1 */
     }
     nav ul {
       list-style: none;
@@ -38,24 +52,21 @@
     }
     nav ul li {
       margin-right: 1rem;
-      cursor: pointer; /* 2 */
     }
-    nav ul li:hover {
-      text-shadow: 0 0 5px var(--secondary-color); /* 3 */
-    }
+    
     h1 {
       margin: 0;
       font-size: 2.5rem;
-      text-shadow: 0 0 5px var(--primary-color); /* 4 */
     }
-
+    
     /* Main Content */
     main {
-      flex-grow: 1; /* 5 */
+      flex-grow: 1;
       padding: 1rem;
-      overflow-y: auto; /* 6 */
+      overflow-y: auto;
       background-color: rgba(0, 0, 0, 0.8);
     }
+    
     .card {
       border: 1px solid var(--secondary-color);
       border-radius: var(--border-radius);
@@ -63,66 +74,61 @@
       margin: 1rem 0;
       background-color: rgba(0, 0, 0, 0.9);
     }
+    
     .red-text {
-      background: red; /* 7 */
+      background: red;
     }
+    
     .respect-link span {
-      background: black; /* 8 */
+      background: black;
     }
-
+    
     /* Footer */
     footer {
       background-color: var(--primary-color);
       padding: 1rem;
       text-align: center;
-      flex-shrink: 0; /* 9 */
+    }
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     }
 
-    /* Extra */
-    .btn {
-      background-color: var(--primary-color);
-      color: var(--text-color);
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: var(--border-radius);
-      cursor: pointer;
+    /* Image and Link Styling */
+    .red-text {
+      background: red;
+      padding: 0.2rem;
     }
-    .btn:hover {
-      background-color: var(--secondary-color); /* 10 */
+    
+    .respect-link span {
+      background: black;
+      color: white;
+      padding: 0.2rem;
+    }
+
+    img {
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 10px var(--primary-color);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Cyberpunk Theme</h1>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <!-- ... Existing Header ... -->
+  <main class="centered">
     <div class="card">
-      <h2>Welcome</h2>
-      <p>Descend into the shadowy depths of the Cyberpunk world. Your future awaits in the darkness. Either as a corp rat or a street kid.</p>
+      <h2>Descend into the shadowy depths of the Cyberpunk realm. Your future awaits—either a cog in the corporate machine or a renegade on the neon-lit streets.</h2>
     </div>
-    <div class="card">
-      <h2>Technology</h2>
-      <p>Immerse yourself in the world of futuristic technology.</p>
-      <button class="btn">Learn More</button>
-    </div>
-    <span class="red-text">Gone but not forgotten</span> <!-- Your Red Text -->
+    <span class="red-text">Gone but not forgotten</span>
     <div>
-      <img src="https://th.bing.com/th/id/R.eb456fed44f5a68c8bcdddf4c3fab30b?rik=rzoayMO7UHVHVg&riu=http%3a%2f%2fblog.greenwicher.com%2f2017%2f01%2f03%2fcodeforces-problemset%2ftourist.jpg&ehk=IujEKAtAN6dgDVrkplI%2f9P8iJkjR7oJI9NTQJ1Jdw0Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" width="200"> <!-- Your Image -->
+      <img src="https://th.bing.com/th/id/R.eb456fed44f5a68c8bcdddf4c3fab30b?rik=rzoayMO7UHVHVg&riu=http%3a%2f%2fblog.greenwicher.com%2f2017%2f01%2f03%2fcodeforces-problemset%2ftourist.jpg&ehk=IujEKAtAN6dgDVrkplI%2f9P8iJkjR7oJI9NTQJ1Jdw0Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" width="200">
     </div>
     <a class="respect-link" target="_blank" href="https://piratesforums.co/attachments/press-f-to-pay-respects-jpg.104024/">
-      <span>Click here to pay respect</span> <!-- Your Link -->
+      <span>Click here to pay respect</span>
     </a>
   </main>
-  <footer>
-    <p>Cyberpunk Theme &copy; 2023</p>
-  </footer>
+  <!-- ... Existing Footer ... -->
 </body>
 </html>
