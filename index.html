@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> ! Always do RUSH !</title>
+  <title> !1! Always do RUSH !1! </title>
   <style>
     :root {
       --primary-color: #ff00cc;
@@ -10,44 +10,45 @@
       --text-color: #fff;
       --border-radius: 5px;
     }
-
     body {
       background: radial-gradient(circle, #000, #222);
       color: var(--text-color);
       font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    
     header {
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       padding: 1rem;
       display: flex;
       justify-content: space-between;
     }
-
     nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
     }
-
     nav ul li {
       margin-right: 1rem;
     }
-
     nav ul li:hover {
       text-shadow: 0 0 5px var(--secondary-color);
     }
-
     h1 {
+      margin: 0;
+      font-size: 2.5rem;
       text-shadow: 0 0 5px var(--primary-color);
     }
-
     main {
       padding: 1rem;
       background-color: rgba(0, 0, 0, 0.8);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-
     .card {
       border: 1px solid var(--secondary-color);
       border-radius: var(--border-radius);
@@ -55,13 +56,11 @@
       margin: 1rem 0;
       background-color: rgba(0, 0, 0, 0.9);
     }
-
     footer {
       background-color: var(--primary-color);
       padding: 1rem;
       text-align: center;
     }
-
     .btn {
       background-color: var(--primary-color);
       color: var(--text-color);
@@ -70,37 +69,19 @@
       border-radius: var(--border-radius);
       cursor: pointer;
     }
-
     .btn:hover {
       background-color: var(--secondary-color);
-    }
-
-    /* Your added styles */
-    .red-text {
-      background: red;
-      padding: 0.2rem;
-    }
-
-    .respect-link span {
-      background: black;
-      color: white;
-      padding: 0.2rem;
-    }
-
-    img {
-      border-radius: 5px;
-      box-shadow: 0 0 10px var(--primary-color);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Cyberpunk Theme</h1>
+    <h1> Neon </h1>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>Team</li>
+        <li>Without m</li>
+        <li>Team</li>
       </ul>
     </nav>
   </header>
@@ -114,14 +95,16 @@
       <p>Immerse yourself in the world of futuristic technology.</p>
       <button class="btn">Learn More</button>
     </div>
-    <span class="red-text">Gone but not forgotten </span>
-    <div>
-      <img src="https://th.bing.com/th/id/R.eb456fed44f5a68c8bcdddf4c3fab30b?rik=rzoayMO7UHVHVg&riu=http%3a%2f%2fblog.greenwicher.com%2f2017%2f01%2f03%2fcodeforces-problemset%2ftourist.jpg&ehk=IujEKAtAN6dgDVrkplI%2f9P8iJkjR7oJI9NTQJ1Jdw0Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" width="200">
+    <div class="card">
+      <span style="background:red">Gone but not forgotten</span>
+      <div>
+        <img src="https://th.bing.com/th/id/R.eb456fed44f5a68c8bcdddf4c3fab30b?rik=rzoayMO7UHVHVg&riu=http%3a%2f%2fblog.greenwicher.com%2f2017%2f01%2f03%2fcodeforces-problemset%2ftourist.jpg&ehk=IujEKAtAN6dgDVrkplI%2f9P8iJkjR7oJI9NTQJ1Jdw0Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" width="200">
+      </div>
+      <a target="_blank" href="https://piratesforums.co/attachments/press-f-to-pay-respects-jpg.104024/">
+        <span style="background: black">Click here to pay respect</span>
+        <span style="background: black">By the order of Team without m Team</span>
+      </a>
     </div>
-    <a class="respect-link" target="_blank" href="https://piratesforums.co/attachments/press-f-to-pay-respects-jpg.104024/">
-      <span>Click here to pay respect</span>
-      <span>- Team without m Team.</span>
-    </a>
   </main>
   <footer>
     <p>Cyberpunk Theme &copy; 2023</p>
