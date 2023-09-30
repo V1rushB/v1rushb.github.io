@@ -11,14 +11,16 @@
       --border-radius: 5px;
     }
 
+    /* 1. Body Background */
     body {
-      background-color: black;
+      background: radial-gradient(circle, #000, #222);
       color: var(--text-color);
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
     }
 
+    /* 2. Header Gradient */
     header {
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       padding: 1rem;
@@ -26,8 +28,9 @@
       justify-content: space-between;
     }
 
+    /* 3. Navigation Styles */
     nav ul {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
@@ -37,16 +40,25 @@
       margin-right: 1rem;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2rem;
+    /* 4. Hover Effect */
+    nav ul li:hover {
+      text-shadow: 0 0 5px var(--secondary-color);
     }
 
+    /* 5. Title Style */
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 0 0 5px var(--primary-color);
+    }
+
+    /* 6. Main Content */
     main {
       padding: 1rem;
       background-color: rgba(0, 0, 0, 0.8);
     }
 
+    /* 7. Card Style */
     .card {
       border: 1px solid var(--secondary-color);
       border-radius: var(--border-radius);
@@ -55,10 +67,26 @@
       background-color: rgba(0, 0, 0, 0.9);
     }
 
+    /* 8. Footer */
     footer {
       background-color: var(--primary-color);
       padding: 1rem;
       text-align: center;
+    }
+
+    /* 9. Button */
+    .btn {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+    }
+
+    /* 10. Button Hover */
+    .btn:hover {
+      background-color: var(--secondary-color);
     }
   </style>
 </head>
@@ -81,6 +109,7 @@
     <div class="card">
       <h2>Technology</h2>
       <p>Immerse yourself in the world of futuristic technology.</p>
+      <button class="btn">Learn More</button>
     </div>
   </main>
   <footer>
